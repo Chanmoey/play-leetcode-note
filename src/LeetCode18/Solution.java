@@ -15,5 +15,7 @@ class Solution {
         }
 
         Arrays.sort(nums);
+
+        return res;
     }
 }
