@@ -39,25 +39,42 @@ class Solution {
             res.add(Arrays.asList(0, 0, 0));
         }
 
+
         /*
-        * 妈的，傻逼做法
+        * 代码去重，不使用Set
         * */
-        Set<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            set.add(num);
-        }
-
-        Integer[] arr = set.toArray(new Integer[] {});
-        int[] intArr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            intArr[i] = arr[i];
-        }
-
-        nums = intArr;
         Arrays.sort(nums);
+        int[] arr = nums;
+        int length = 1;
+        for (int i = 1, j = 0; i < nums.length; i++) {
+            if (arr[j] != nums[i]) {
+                arr[++j] = arr[i];
+                length++;
+            }
+        }
 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
+        nums = arr;
+
+
+        /*
+         * 数组去重，使用Set
+         * */
+//        Set<Integer> set = new HashSet<>();
+//        for (int num : nums) {
+//            set.add(num);
+//        }
+//
+//        Integer[] arr = set.toArray(new Integer[] {});
+//        int[] intArr = new int[arr.length];
+//        for (int i = 0; i < arr.length; i++) {
+//            intArr[i] = arr[i];
+//        }
+//
+//        nums = intArr;
+//        Arrays.sort(nums);
+
+        for (int i = 0; i < length; i++) {
+            for (int j = i + 1; j < length; j++) {
 
                 if (nums[i] * 2 + nums[j] == 0 && counter.get(nums[i]) >= 2) {
                     res.add(Arrays.asList(nums[i], nums[i], nums[j]));
