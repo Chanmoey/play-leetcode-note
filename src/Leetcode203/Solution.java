@@ -3,6 +3,7 @@ package Leetcode203;
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
 
+        // 头节点做单独处理
         while (head != null && head.val == val){
             head = head.next;
         }
