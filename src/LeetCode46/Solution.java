@@ -24,13 +24,12 @@ class Solution {
                 p.removeLast();
                 used[i] = false;
             }
-
-        return;
+        // return; 结束递归逻辑。
     }
 
     public List<List<Integer>> permute(int[] nums) {
 
-        res = new ArrayList<List<Integer>>();
+        res = new ArrayList<>();
         if(nums == null || nums.length == 0)
             return res;
 

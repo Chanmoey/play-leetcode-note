@@ -20,19 +20,17 @@ class Solution {
             generateCombinations(n, k, i + 1, c);
             c.removeLast();
         }
-
-        return;
+        // return;
     }
     public List<List<Integer>> combine(int n, int k) {
 
-        res = new ArrayList<List<Integer>>();
-        if(n <= 0 || k <= 0 || k > n)
+        res = new ArrayList<>();
+        if(k <= 0 || k > n)
             return res;
 
         LinkedList<Integer> c = new LinkedList<Integer>();
         generateCombinations(n, k, 1, c);
 
         return res;
-
     }
 }

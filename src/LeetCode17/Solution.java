@@ -3,6 +3,7 @@ package LeetCode17;
 import java.util.ArrayList;
 import java.util.List;
 
+// 时间复杂度O(2^n)
 class Solution {
 
     public List<String> res = new ArrayList<>();
