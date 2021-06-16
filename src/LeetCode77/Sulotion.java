@@ -15,6 +15,8 @@ class Solution {
             return;
         }
 
+        // c中还有k - c.size()个空位，[i...n]中只要有k-c.size()个元素
+        // i最多为 n - (k - c.size()) + 1
         for(int i = start; i <= n - (k - c.size()) + 1; i ++){
             c.addLast(i);
             generateCombinations(n, k, i + 1, c);
@@ -28,7 +30,7 @@ class Solution {
         if(k <= 0 || k > n)
             return res;
 
-        LinkedList<Integer> c = new LinkedList<Integer>();
+        LinkedList<Integer> c = new LinkedList<>();
         generateCombinations(n, k, 1, c);
 
         return res;
