@@ -2,6 +2,9 @@ package LeetCode435;
 
 import java.util.Arrays;
 
+/**
+ * 贪心算法
+ * */
 class Solution1 {
     public int eraseOverlapIntervals(int[][] intervals) {
 
