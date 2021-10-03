@@ -8,11 +8,11 @@ import java.util.PriorityQueue;
 
 class Pair implements Comparable{
     Integer first;
-    Integer secont;
+    Integer second;
 
     public Pair(Integer first, Integer secont) {
         this.first = first;
-        this.secont = secont;
+        this.second = secont;
     }
 
     public Integer getFirst() {
@@ -20,7 +20,7 @@ class Pair implements Comparable{
     }
 
     public Integer getSecond() {
-        return secont;
+        return second;
     }
 
     @Override

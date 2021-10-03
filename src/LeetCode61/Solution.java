@@ -1,10 +1,5 @@
 package LeetCode61;
 
-
-import jdk.nashorn.internal.ir.LiteralNode;
-
-import java.awt.print.Pageable;
-
 class ListNode {
     int val;
     ListNode next;

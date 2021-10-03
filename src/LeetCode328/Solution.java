@@ -1,8 +1,6 @@
 package LeetCode328;
 
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 class ListNode {
     int val;
     ListNode next;

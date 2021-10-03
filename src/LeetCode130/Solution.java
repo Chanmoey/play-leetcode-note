@@ -1,6 +1,8 @@
 package LeetCode130;
 
-import javafx.util.Pair;
+
+
+import Pair.Pair;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

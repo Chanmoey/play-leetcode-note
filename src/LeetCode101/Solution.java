@@ -1,7 +1,8 @@
 package LeetCode101;
 
+import Pair.Pair;
 import TreeNode.TreeNode;
-import javafx.util.Pair;
+
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.List;
  * 时间复杂度O(n)
  * 空间复杂度O(n)
  * 思路:记录一层的结点，然后判断每一层是否对称。
- * */
+ */
 
 class Solution {
     public boolean isSymmetric(TreeNode root) {

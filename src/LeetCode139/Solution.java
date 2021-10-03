@@ -1,7 +1,5 @@
 package LeetCode139;
 
-import sun.java2d.pipe.SolidTextRenderer;
-
 import java.util.ArrayList;
 import java.util.List;
 
