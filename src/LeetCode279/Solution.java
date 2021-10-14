@@ -21,6 +21,9 @@ class Pair<K, V> {
     }
 }
 
+/**
+ * 图的思想，求图的最短路径
+ */
 class Solution {
     public int numSquares(int n) {
         Deque<Pair<Integer, Integer>> q = new ArrayDeque<>();
