@@ -43,6 +43,7 @@ import java.util.Collections;
 /// Sorting
 /// Time Complexity: O(nlogn)
 /// Space Complexity: O(256)
+/// Runtime: 3 ms,
 class Solution {
 
     private class Pair implements Comparable<Pair>{
