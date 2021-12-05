@@ -8,7 +8,7 @@ package LeetCode1032;
 class StreamChecker {
 
     private final String[] words;
-    private String lastChar;
+    private final String lastChar;
     private String suffix;
 
     public StreamChecker(String[] words) {
