@@ -13,12 +13,11 @@ class Solution {
         int res = 0;
         while (head != null) {
             res += head.val;
-            if (head.next != null) {
-                res <<= 1;
-            }
+            res <<= 1;
             head = head.next;
         }
 
+        res >>= 1;
         return res;
     }
 }
