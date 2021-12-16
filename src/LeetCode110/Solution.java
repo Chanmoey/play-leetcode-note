@@ -1,6 +1,6 @@
 package LeetCode110;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public boolean isBalanced(TreeNode root) {

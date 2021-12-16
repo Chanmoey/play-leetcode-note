@@ -1,6 +1,6 @@
 package LeetCode563;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 /**
  * @author Chanmoey

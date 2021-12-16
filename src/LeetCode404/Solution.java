@@ -1,6 +1,6 @@
 package LeetCode404;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {

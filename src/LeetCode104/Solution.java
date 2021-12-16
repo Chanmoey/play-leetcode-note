@@ -1,6 +1,6 @@
 package LeetCode104;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public int maxDepth(TreeNode root) {

@@ -1,6 +1,6 @@
 package LeetCode106;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

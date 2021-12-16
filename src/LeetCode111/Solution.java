@@ -1,6 +1,6 @@
 package LeetCode111;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 /**
  * dfs Solution

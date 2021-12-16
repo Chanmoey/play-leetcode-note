@@ -1,4 +1,4 @@
-package TreeNode;
+package treenode;
 
 
 public class TreeNode {

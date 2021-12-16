@@ -1,6 +1,6 @@
 package LeetCode450;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {

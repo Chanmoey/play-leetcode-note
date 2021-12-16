@@ -1,6 +1,6 @@
 package LeetCode230;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution1 {
     private int index;

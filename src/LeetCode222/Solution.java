@@ -1,6 +1,6 @@
 package LeetCode222;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public int countNodes(TreeNode root) {

@@ -1,6 +1,6 @@
 package LeetCode108;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {

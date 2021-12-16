@@ -1,6 +1,6 @@
 package LeetCode141;
 
-import ListNode.ListNode;
+import listnode.ListNode;
 
 /**
  * 已知-10^5 <= Node.val <= 10^5，

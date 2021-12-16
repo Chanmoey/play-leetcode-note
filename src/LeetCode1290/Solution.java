@@ -1,7 +1,7 @@
 package LeetCode1290;
 
 
-import ListNode.ListNode;
+import listnode.ListNode;
 
 /**
  * @author Chanmoey

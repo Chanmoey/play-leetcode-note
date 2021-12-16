@@ -1,6 +1,6 @@
 package LeetCode160;
 
-import ListNode.ListNode;
+import listnode.ListNode;
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

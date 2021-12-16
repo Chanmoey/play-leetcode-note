@@ -1,6 +1,6 @@
 package LeetCode112;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {

@@ -1,7 +1,7 @@
 package LeetCode101;
 
 import Pair.Pair;
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 
 import java.util.ArrayDeque;

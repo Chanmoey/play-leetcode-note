@@ -1,6 +1,6 @@
 package LeetCode226;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public TreeNode invertTree(TreeNode root) {

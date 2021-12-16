@@ -1,6 +1,6 @@
 package LeetCode23;
 
-import ListNode.ListNode;
+import listnode.ListNode;
 
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {

@@ -1,6 +1,6 @@
 package LeetCode199;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package LeetCode437;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public int pathSum(TreeNode root, int targetSum) {

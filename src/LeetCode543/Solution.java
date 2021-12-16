@@ -1,6 +1,6 @@
 package LeetCode543;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
 

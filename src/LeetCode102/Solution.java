@@ -1,6 +1,6 @@
 package LeetCode102;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 import java.util.*;
 

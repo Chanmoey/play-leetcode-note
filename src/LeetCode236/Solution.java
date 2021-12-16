@@ -1,6 +1,6 @@
 package LeetCode236;
 
-import TreeNode.TreeNode;
+import treenode.TreeNode;
 
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
