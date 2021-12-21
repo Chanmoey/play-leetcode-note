@@ -23,12 +23,14 @@ class Solution {
             temp.add(arr[i]);
             temp.add(arr[j]);
 
-            if (map.containsKey(abs)) {
-                map.get(abs).add(temp);
-            } else {
-                map.put(abs, new ArrayList<>());
-                map.get(abs).add(temp);
-            }
+            map.computeIfAbsent(abs, key -> new ArrayList<>()).add(temp);
+
+//            if (map.containsKey(abs)) {
+//                map.get(abs).add(temp);
+//            } else {
+//                map.put(abs, new ArrayList<>());
+//                map.get(abs).add(temp);
+//            }
         }
 
         return map.get(minAbs);
