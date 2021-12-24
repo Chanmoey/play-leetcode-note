@@ -10,8 +10,8 @@ class Solution {
     /**
      * 16 ms
      *
-     * @param n
-     * @return
+     * @param n n
+     * @return result
      */
     public boolean isPowerOfTwo(int n) {
         if (n <= 0) {
@@ -37,8 +37,8 @@ class Solution {
     /**
      * better
      *
-     * @param n
-     * @return
+     * @param n n
+     * @return result
      */
     public boolean isPowerOfTwo0(int n) {
         if (n <= 0) {
