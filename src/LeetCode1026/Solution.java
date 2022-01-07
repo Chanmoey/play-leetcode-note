@@ -1,6 +1,5 @@
 package LeetCode1026;
 
-import com.sun.source.tree.Tree;
 import treenode.TreeNode;
 
 /**

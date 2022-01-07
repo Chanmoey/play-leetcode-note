@@ -1,5 +1,7 @@
 package LeetCode394;
 
+import java.util.Collections;
+
 /**
  * @author Chanmoey
  * @date 2021年12月19日 10:30
@@ -40,7 +42,8 @@ class Solution {
     }
 
     private String repeat(String substr, int times) {
-        return String.valueOf(substr).repeat(Math.max(0, times));
+//        return String.valueOf(substr).repeat(Math.max(0, times)); Java 8 不兼容
+        return String.join("", Collections.nCopies(Math.max(0, times), substr));
     }
 
     private String replace(String targetString, int start, int length, String repeatString) {
