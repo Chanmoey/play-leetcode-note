@@ -15,11 +15,11 @@ class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
 
         if (edges == null || edges.length == 0) {
-            return List.of(0);
+//            return List.of(0); Java 8 不兼容
+            return Collections.singletonList(0);
         }
 
         if (edges.length == 1) {
-            // return new ArrayList<>(edges[0])
             return new ArrayList<>(Arrays.asList(edges[0][0], edges[0][1]));
         }
 
@@ -54,7 +54,6 @@ class Solution {
     private void buildTree(List<List<Integer>> tree, int[][] edges) {
 
         List<Integer> nums = this.buildArrayNotRoot(tree.get(0).get(0), this.n);
-//        System.out.println(Arrays.toString(nums));
         for (int k = 0; k < nums.size(); k ++) {
             boolean isConnect = false;
             for (int i = 0; i < tree.size(); i++) {
