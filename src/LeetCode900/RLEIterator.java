@@ -1,9 +1,5 @@
 package LeetCode900;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
-
 /**
  * @author Chanmoey
  * @date 2022年01月15日
