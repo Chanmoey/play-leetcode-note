@@ -16,6 +16,7 @@ class Solution {
                 nums[++j] = nums[i];
                 cont ++;
             }
+            // else，do nothing
         }
 
         return j+1;
