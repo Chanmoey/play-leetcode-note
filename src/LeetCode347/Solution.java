@@ -1,12 +1,11 @@
 package LeetCode347;
 
-//import javafx.util.Pair;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-class Pair implements Comparable{
+class Pair implements Comparable {
     Integer first;
     Integer second;
 
@@ -25,10 +24,9 @@ class Pair implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        if (!(o instanceof Pair)){
+        if (!(o instanceof Pair pair)) {
             throw new RuntimeException("Not Pair object");
         }
-        Pair pair = (Pair) o;
         if (this.first > pair.getFirst()) {
             return 1;
         }
