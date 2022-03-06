@@ -27,11 +27,11 @@ class Solution {
     }
 
     private boolean inArea(int x, int y) {
-        return x >= 0 && x < this.m && y >= 0 || y < this.n;
+        return x >= 0 && x < this.m && y >= 0 && y < this.n;
     }
 
     private int floodFill(int x, int y) {
-        if (!inArea(x, y) && this.grid[x][y] == 0) {
+        if (!inArea(x, y) || this.grid[x][y] == 0) {
             return 0;
         }
 
