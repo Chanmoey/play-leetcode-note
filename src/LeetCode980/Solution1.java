@@ -16,6 +16,7 @@ class Solution1 {
         this.n = grid[0].length;
         this.isVisited = new boolean[this.m][this.n];
         int left = this.m * this.n;
+
         for (int i = 0; i < this.m; i++) {
             for (int j = 0; j < this.n; j++) {
                 if (grid[i][j] == 1) {
