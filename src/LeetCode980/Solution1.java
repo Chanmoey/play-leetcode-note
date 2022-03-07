@@ -1,10 +1,11 @@
 package LeetCode980;
 
+import java.util.Arrays;
+
 class Solution1 {
 
     private int[][] graph;
     private static final int[][] D = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
-    private boolean[][] isVisited;
     private int m;
     private int n;
     private int start;
@@ -14,7 +15,6 @@ class Solution1 {
         this.graph = grid;
         this.m = grid.length;
         this.n = grid[0].length;
-        this.isVisited = new boolean[this.m][this.n];
         int left = this.m * this.n;
 
         for (int i = 0; i < this.m; i++) {
@@ -31,31 +31,31 @@ class Solution1 {
             }
         }
 
-        return this.floodFill(start, left);
+        int visited = 0;
+        return this.floodFill(visited, start, left);
     }
 
-    private int floodFill(int start, int left) {
+    private int floodFill(int visited, int v, int left) {
 
-        int x = start / this.n;
-        int y = start % this.n;
-
-        this.isVisited[x][y] = true;
+        visited += (1 << v);
         left--;
-        if (left == 0 && start == this.end) {
-            this.isVisited[x][y] = false;
+        if (left == 0 && v == this.end) {
             return 1;
         }
 
+        int x = v / this.n;
+        int y = v % this.n;
         int res = 0;
         for (int[] d : D) {
             int newX = x + d[0];
             int newY = y + d[1];
-            if (this.inArea(newX, newY) && !this.isVisited[newX][newY]
+            int next = newX * this.n + newY;
+            if (this.inArea(newX, newY) && (visited & (1 << next)) == 0
                     && this.graph[newX][newY] == 0) {
-                res += floodFill(newX * this.n + newY, left);
+                res += floodFill(visited, next, left);
             }
         }
-        this.isVisited[x][y] = false;
+
         return res;
     }
 
