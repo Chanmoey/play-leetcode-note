@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * @author Chanmoey
  * @date 2022年02月23日
  */
-class Solution {
+class Solution1 {
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
 
