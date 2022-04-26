@@ -13,11 +13,11 @@ public class Solution {
 
     private static class Edge implements Comparable<Edge> {
 
-        private int v;
+        private final int v;
 
-        private int w;
+        private final int w;
 
-        private int weight;
+        private final int weight;
 
         public int getV() {
             return v;
@@ -110,6 +110,6 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        s.minCostConnectPoints(new int[][]{{0,0},{2,2},{3,10},{5,2},{7,0}});
+        System.out.println(s.minCostConnectPoints(new int[][]{{0,0},{2,2},{3,10},{5,2},{7,0}}));
     }
 }
