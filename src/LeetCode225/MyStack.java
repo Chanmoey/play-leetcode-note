@@ -9,7 +9,7 @@ import java.util.Queue;
  */
 class MyStack {
 
-    private Queue<Integer> queue;
+    private final Queue<Integer> queue;
 
     public MyStack() {
         this.queue = new LinkedList<>();
