@@ -1,7 +1,8 @@
 package LeetCode2099;
 
-import javax.print.DocFlavor;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Chanmoey
