@@ -3,7 +3,8 @@ package LeetCode3;
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int[] freq = new int[256];
-        int l = 0, r = -1;
+        int l = 0;
+        int r = -1;
         int res = 0;
 
         while(l < s.length()){
@@ -13,7 +14,7 @@ class Solution {
             else{
                 freq[s.charAt(l++)] --;
             }
-
+            // 可以把这个提取到else代码块里，节省比较次数。
             res = Math.max(res, r-l+1);
         }
 
