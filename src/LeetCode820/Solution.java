@@ -18,7 +18,7 @@ class Solution {
         }
     }
 
-    private TrieNode root = new TrieNode();
+    private final TrieNode root = new TrieNode();
     private Map<Integer, Integer> map = new HashMap<>();
 
     private void insert(TrieNode root, String word, int position) {
