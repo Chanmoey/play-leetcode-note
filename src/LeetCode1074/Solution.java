@@ -23,7 +23,7 @@ class Solution {
             for(int end = start; end < col; end++){
                 int subMatrixSum = 0;
 
-                Map<Integer, Integer> countElm = new HashMap<Integer, Integer>();
+                Map<Integer, Integer> countElm = new HashMap<>();
                 countElm.put(0,1);
 
                 for (int[] ints : matrix) {
