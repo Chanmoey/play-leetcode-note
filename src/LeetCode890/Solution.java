@@ -44,15 +44,4 @@ class Solution {
 
         return true;
     }
-
-//    private boolean isSameStr(char[] word, char[] pattern) {
-//        // word.length == pattern.length
-//        for (int i = 0; i < word.length; i++) {
-//            if (word[i] != pattern[i]) {
-//                return false;
-//            }
-//        }
-//
-//        return true;
-//    }
 }
