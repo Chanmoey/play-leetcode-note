@@ -1,6 +1,8 @@
 package LeetCode985;
 
 /**
+ * Runtime: 21 ms, faster than 5.47% of Java online submissions for Sum of Even Numbers After Queries.
+ *
  * @author Chanmoey
  * @date 2022年09月21日
  */
