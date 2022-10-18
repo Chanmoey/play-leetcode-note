@@ -14,7 +14,6 @@ public class BefoerSoulution {
         map.put(1, "1");
         map.put(2, "11");
         map.put(3, "21");
-
         map.put(4, "1211");
 
         for (int i = 5; i <= 30; i++) {
@@ -42,8 +41,13 @@ public class BefoerSoulution {
         System.out.println(map.size());
 
         System.out.print('{');
-        for (String s : map.values()) {
-            System.out.print('"' + s + '"' + ", ");
+        String[] values = map.values().toArray(new String[0]);
+        for (int i = 0; i < values.length; i++) {
+            if (i == values.length - 1){
+                System.out.print('"' + values[i] + '"');
+                break;
+            }
+            System.out.print('"' + values[i] + '"' + ", ");
         }
         System.out.print('}');
     }
