@@ -1,23 +1,38 @@
 package LeetCode263;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
+
 /**
  * @author Chanmoey
  * @date 2022年11月18日
  */
 class Solution {
-    public boolean isUgly(int n) {
+    private int orientation(int[] p, int[] q, int[] r) {
+        return (r[1] - q[1]) * (q[0] - p[0]) - ((q[1] - p[1]) * (r[0] - q[0]));
+    }
 
-        if (n <= 0) {
-            return false;
-        }
-
-        // 这个循环之后，n将不会被2/3/5整除，如果此时n不为1，则说明起码n还能被n整除。就不是ugly。
-        for (int factor : new int[]{2, 3, 5}) {
-            while (n % factor == 0) {
-                n /= factor;
+    public int[][] outerTrees(int[][] trees) {
+        Stack<int[]> upper = new Stack<>();
+        Stack<int[]> lower = new Stack<>();
+        Arrays.sort(trees, (p, q) ->
+                q[0] - p[0] == 0 ? q[1] - p[1] : q[0] - p[0]);
+        for (int[] tree : trees) {
+            while (lower.size() >= 2 && orientation(lower.get(lower.size() - 2), lower.get(lower.size() - 1), tree) > 0) {
+                lower.pop();
             }
-        }
+            while (upper.size() >= 2 && orientation(upper.get(upper.size() - 2), upper.get(upper.size() - 1), tree) < 0) {
+                upper.pop();
+            }
+            lower.push(tree);
+            upper.push(tree);
 
-        return n == 1;
+        }
+        Set<int[]> res = new HashSet<>(lower);
+        res.addAll(upper);
+        return res.toArray(new int[res.size()][]);
+
     }
 }
