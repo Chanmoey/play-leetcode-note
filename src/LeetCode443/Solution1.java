@@ -2,7 +2,6 @@ package LeetCode443;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
 
 /**
  * Given an array of characters chars, compress it using the following algorithm:
@@ -51,7 +50,7 @@ class Solution1 {
             if (count > 9) {
                 // idx往前移动，指向需要插入数字的地方
                 idx = putNum(chars, idx, count);
-                idx --;
+                idx--;
             } else {
                 chars[idx] = (char) ('0' + count);
             }
@@ -61,7 +60,6 @@ class Solution1 {
     }
 
     /**
-     *
      * @param idx 需要插入的第一个位置
      * @return 新的idx
      */
